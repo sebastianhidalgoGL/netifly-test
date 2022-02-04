@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "icon-build-site": "apps/icon-build-site",
+    "icon-build-site-e2e": "apps/icon-build-site-e2e"
+  }
+}

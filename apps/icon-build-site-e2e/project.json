@@ -1,0 +1,28 @@
+{
+  "root": "apps/icon-build-site-e2e",
+  "sourceRoot": "apps/icon-build-site-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/icon-build-site-e2e/cypress.json",
+        "devServerTarget": "icon-build-site:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "icon-build-site:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/icon-build-site-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["icon-build-site"]
+}

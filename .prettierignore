@@ -1,0 +1,8 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+
+/apps/icon-build-site/node_modules
+/apps/icon-build-site/public
+/apps/icon-build-site/.cache
